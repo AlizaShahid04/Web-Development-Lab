@@ -1,11 +1,13 @@
-let number = parseInt(prompt("Enter a number:"));
+// 5. Function to count vowels in a string
 
-if (!isNaN(number)) {
-  if (number % 3 === 0) {
-    console.log(`${number} is a multiple of 3.`);
-  } else {
-    console.log(`${number} is not a multiple of 3.`);
-  }
-} else {
-  console.log("Please enter a valid number.");
+function countVowels(str) {
+    const vowels = "aeiouAEIOU";
+    let count = 0;
+    for (const char of str) {
+        if (vowels.includes(char)) {
+            count++;
+        }
+    }
+    return count;
 }
+console.log("Vowel Count:", countVowels("Hello World"));

@@ -1,5 +1,9 @@
-let bigIntValue = 12345678901234567890n; // BigInt
-let symbolValue = Symbol("unique"); // Symbol
-
-console.log(typeof bigIntValue); // Output: "bigint"
-console.log(typeof symbolValue);  // Output: "symbol"
+// 1. Find even numbers using for-of loop in an array
+const numbers = [10, 23, 45, 6, 78, 89, 12];
+const evenNumbers = [];
+for (const num of numbers) {
+    if (num % 2 === 0) {
+        evenNumbers.push(num);
+    }
+}
+console.log("Even Numbers:", evenNumbers);

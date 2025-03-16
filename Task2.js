@@ -1,23 +1,13 @@
-const Product = {
-    name: "PakWheels Waterless & Glass Cleaner",
-    items: [
-        {
-            name: "Glass Cleaner",
-            description: "Streak-free glass cleaner for home, office, and car use."
-        },
-        {
-            name: "Waterless Car Wash",
-            description: "No-scratch formula, lifts dirt and road grime, wash in minutes."
-        }
-    ],
-    price: {
-        beforeDiscount: 1198,
-        afterDiscount: 958,
-        discountPercentage: 20
-    },
-    saleEvent: "Wheel Engine Sale",
-    brand: "PakWheels",
-    orderNow: true
-};
+// 2. Find max and min in an array using for-of loop
 
-console.log(Product);
+const numbers = [10, 23, 45, 6, 78, 89, 12]; // Define the numbers array
+
+let max = numbers[0]; 
+let min = numbers[0];
+
+for (const num of numbers) {
+    if (num > max) max = num;
+    if (num < min) min = num;
+}
+
+console.log("Max:", max, "Min:", min);
